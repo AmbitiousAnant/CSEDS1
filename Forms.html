@@ -1,0 +1,37 @@
+<html>
+    <title>Forms</title>
+    <body>
+        <h1>HTML FORMS</h1>
+        <center><h2>LOGIN</h2>
+        <form action="submit.php" method="post">
+            Name: <input type="text" name="name"><br><br>
+            Email: <input type="email" name="email"><br><br>
+            Password: <input type="password" name="password"><br><br>
+            Age: <input type="number" name="age" min="1" max="100"><br><br>
+
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender"   value="female">
+            <label for="   female">Female</label><br>
+            <input type="radio" id="        other" name="gender" value ="other">
+            <label for="other">Other</label><br><br>
+           </center>
+            <h2>SELECT YOUR CAR</h2>
+
+            <label for="cars">Choose a car:</label>
+            <select id="cars" name="cars">
+                <option value="volvo">Volvo</option>
+                <option value="buggatti">Buggati</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option></select><br><br>
+
+            <h3>Give info about your car</h3>
+            <textarea name="car info" rows="4" cols="30">
+            </textarea><br><br>
+            <input type="button" onclick="alert('Hello World!')" value="Click Me!">
+            <label for="favcolor">Select your favorite color:</label>
+             <input type="color" id="favcolor" name="favcolor">
+             <center>    <input type="submit" value="Submit"></center>
+                </form></body>
+</html>
