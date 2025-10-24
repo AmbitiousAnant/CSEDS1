@@ -1,0 +1,117 @@
+
+<html>
+<head>
+    <title>Hotel Room Booking Form</title>
+</head>
+<body><br>
+    <center><h1>Hotel Room Booking Form</h1></center><br><br>
+    <hr>
+    
+    <form>
+        <h2>Personal Information</h2>
+        
+        <label for="firstName">First Name:</label><br>
+        <input type="text" id="firstName" name="firstName"><br><br>
+        
+        <label for="lastName">Last Name:</label><br>
+        <input type="text" id="lastName" name="lastName"><br><br>
+        
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone"><br><br>
+        
+        <label for="address">Address:</label><br>
+        <input type="text" id="address" name="address" size="50"><br><br>
+        
+        <label for="city">City:</label><br>
+        <input type="text" id="city" name="city"><br><br>
+        
+        <label for="country">Country:</label><br>
+        <select id="country" name="country">
+            <option value="">-- Select Country --</option>
+            <option value="usa">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="canada">Canada</option>
+            <option value="australia">Australia</option>
+            <option value="india">India</option>
+            <option value="germany">Germany</option>
+            <option value="france">France</option>
+            <option value="japan">Japan</option>
+            <option value="other">Other</option>
+        </select><br><br>
+        
+        <hr>
+        
+        <h2>Booking Details</h2>
+        
+        <label for="checkIn">Check-in Date:</label><br>
+        <input type="date" id="checkIn" name="checkIn"><br><br>
+        
+        <label for="checkOut">Check-out Date:</label><br>
+        <input type="date" id="checkOut" name="checkOut"><br><br>
+        
+        <label for="roomType">Room Type:</label><br>
+        <select id="roomType" name="roomType">
+            <option value="">  Select Room Type  </option>
+            <option value="single">Single Room - 99/night</option>
+            <option value="double">Double Room - 199/night</option>
+            <option value="deluxe">Deluxe Room - 499/night</option>
+            <option value="suite">Suite - 299/night</option>
+            <option value="presidential">Presidential Suite - 499/night</option>
+        </select><br><br>
+        
+        <label for="guests">Number of Guests:</label><br>
+        <input type="number" id="guests" name="guests" min="1" max="10" value="1"><br><br>
+        
+        <label for="adults">Number of Adults:</label><br>
+        <input type="number" id="adults" name="adults" min="1" max="8" value="1"><br><br>
+        
+        <label for="children">Number of Children:</label><br>
+        <input type="number" id="children" name="children" min="0" max="5" value="0"><br><br>
+        
+        <label>Bed Preference:</label><br>
+        <input type="radio" id="king" name="bedType" value="king">
+        <label for="king">King Size</label><br>
+        <input type="radio" id="queen" name="bedType" value="queen">
+        <label for="queen">Queen Size</label><br>
+        <input type="radio" id="twin" name="bedType" value="twin">
+        <label for="twin">Twin Beds</label><br><br>
+        
+        <label for="specialRequests">Special Requests:</label><br>
+        <textarea id="specialRequests" name="specialRequests" rows="5" cols="50" placeholder="Please enter any special requests or dietary requirements..."></textarea><br><br>
+        
+        <hr>
+        
+        <h2>Payment Information</h2>
+        
+        <label for="cardName">Name on Card: </label><br>
+        <input type="text" id="cardName" name="cardName"><br><br>
+        
+        <label for="cardNumber">Card Number: </label><br>
+        <input type="text" id="cardNumber" name="cardNumber" maxlength="16"><br><br>
+        
+        <label for="expiryDate">Expiry Date (MM/YY):</label><br>
+        <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" maxlength="5"><br><br>
+        
+        <label for="cvv">CVV:</label><br>
+        <input type="password" id="cvv" name="cvv" maxlength="3"><br><br>
+        
+        <hr>
+        
+        <h2>Terms and Conditions</h2>
+        
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the terms and conditions </label><br><br>
+        
+        <input type="checkbox" id="newsletter" name="newsletter">
+        <label for="newsletter">Subscribe to newsletter for special offers</label><br><br>
+        
+        <hr>
+        
+        <button type="submit">Book Now</button>
+        
+    </form>
+</body>
+</html>
