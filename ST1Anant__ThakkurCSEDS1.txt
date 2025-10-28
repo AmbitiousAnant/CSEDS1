@@ -1,0 +1,35 @@
+<html>
+<title>E-commerce</title>
+<body>
+<center><h1>E-commerce Website</h1></center>
+<center><nav>
+<a href="#1">Electronics</a>|
+<a href="#2">Fashion</a>|
+<a href="#3">Daily Needs</a>|
+</center>
+<h3 id=1>Electronics</h3>
+<p>This section gives u all latest and best tech</p>
+<img src ="iPhone.jpg" width="100" height="100" alt="iphone">
+<iframe src="youtube/iPhone.com" width="100" height="100" allowfullscren></iframe>
+<p>It priced at 200000</p>
+<p>for more information</p>
+<a href="Apple.com">Click here</a>
+<h3 id=2>Fashion</h3>
+<p>This section gives you all latest trends in market</p>
+<vedio src="fashion.mp4" alt="Latest Trends" height="100" width="100"></vedio>
+<p><b>Its price starts from 2000</b></p>
+<i frame src="latest trends.com" width="100" height="100" allowfullscreen></iframe>
+<h3 id=3>Daily Needs</h3>
+<p>This fullfills ur daily needs needed for life</p>
+<img src="vegetables.jpg" alt="veggies" height="100" width="100">
+<p>For more info <p>
+<a href="Walmart.com">Walmart</a>
+<br>
+<p>This is all available on us</p>
+<p>email:ecommerce@gmail.com</p>
+</body>
+</html>
+
+
+
+
