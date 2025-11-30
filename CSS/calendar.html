@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar - November 2025</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            display: grid;
+            grid-template-areas:
+                "header header header header header header header"
+                "day1 day2 day3 day4 day5 day6 day7"
+                "date1 date2 date3 date4 date5 date6 date7"
+                "date8 date9 date10 date11 date12 date13 date14"
+                "date15 date16 date17 date18 date19 date20 date21"
+                "date22 date23 date24 date25 date26 date27 date28"
+                "date29 date30 date31 date32 date33 date34 date35"
+                "footer footer footer footer footer footer footer";
+            grid-template-rows: 80px 50px (5, 1fr) 50px;
+            grid-template-columns: (7, 1fr);
+            gap: 5px;
+            height: 100%;
+            width: 100%;
+            border: 10px solid black;
+            box-sizing: border-box;
+        }
+        .header {
+            grid-area: header;
+            background-color: #87ceeb;
+            color: white;
+            font-size: 36px;
+            border-bottom: 3px solid #4682b4;
+            padding: 20px;
+        }
+        .day1 { grid-area: day1; }
+        .day2 { grid-area: day2; }
+        .day3 { grid-area: day3; }
+        .day4 { grid-area: day4; }
+        .day5 { grid-area: day5; }
+        .day6 { grid-area: day6; }
+        .day7 { grid-area: day7; }
+        
+        .day-name {
+            background-color: #ffd700;
+            border: 2px solid #ffa500;
+            padding: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .date1 { grid-area: date1; }
+        .date2 { grid-area: date2; }
+        .date3 { grid-area: date3; }
+        .date4 { grid-area: date4; }
+        .date5 { grid-area: date5; }
+        .date6 { grid-area: date6; }
+        .date7 { grid-area: date7; }
+        .date8 { grid-area: date8; }
+        .date9 { grid-area: date9; }
+        .date10 { grid-area: date10; }
+        .date11 { grid-area: date11; }
+        .date12 { grid-area: date12; }
+        .date13 { grid-area: date13; }
+        .date14 { grid-area: date14; }
+        .date15 { grid-area: date15; }
+        .date16 { grid-area: date16; }
+        .date17 { grid-area: date17; }
+        .date18 { grid-area: date18; }
+        .date19 { grid-area: date19; }
+        .date20 { grid-area: date20; }
+        .date21 { grid-area: date21; }
+        .date22 { grid-area: date22; }
+        .date23 { grid-area: date23; }
+        .date24 { grid-area: date24; }
+        .date25 { grid-area: date25; }
+        .date26 { grid-area: date26; }
+        .date27 { grid-area: date27; }
+        .date28 { grid-area: date28; }
+        .date29 { grid-area: date29; }
+        .date30 { grid-area: date30; }
+        .date31 { grid-area: date31; }
+        .date32 { grid-area: date32; }
+        .date33 { grid-area: date33; }
+        .date34 { grid-area: date34; }
+        .date35 { grid-area: date35; }
+        
+        .date-box {
+            background-color: #90ee90;
+            border: 2px solid #32cd32;
+            padding: 20px;
+            font-size: 20px;
+            color: #333;
+        }
+        
+        .empty {
+            background-color: #d3d3d3;
+            border: 2px solid #a9a9a9;
+            padding: 20px;
+        }
+        
+        .footer {
+            grid-area: footer;
+            background-color: #87ceeb;
+            color: white;
+            font-size: 24px;
+            border-top: 3px solid #4682b4;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">November 2025</div>
+        
+        <div class="day1 day-name">Sun</div>
+        <div class="day2 day-name">Mon</div>
+        <div class="day3 day-name">Tue</div>
+        <div class="day4 day-name">Wed</div>
+        <div class="day5 day-name">Thu</div>
+        <div class="day6 day-name">Fri</div>
+        <div class="day7 day-name">Sat</div>
+        
+        <div class="date1 empty"></div>
+        <div class="date2 empty"></div>
+        <div class="date3 empty"></div>
+        <div class="date4 empty"></div>
+        <div class="date5 empty"></div>
+        <div class="date6 empty"></div>
+        <div class="date7 date-box">1</div>
+        
+        <div class="date8 date-box">2</div>
+        <div class="date9 date-box">3</div>
+        <div class="date10 date-box">4</div>
+        <div class="date11 date-box">5</div>
+        <div class="date12 date-box">6</div>
+        <div class="date13 date-box">7</div>
+        <div class="date14 date-box">8</div>
+        
+        <div class="date15 date-box">9</div>
+        <div class="date16 date-box">10</div>
+        <div class="date17 date-box">11</div>
+        <div class="date18 date-box">12</div>
+        <div class="date19 date-box">13</div>
+        <div class="date20 date-box">14</div>
+        <div class="date21 date-box">15</div>
+        
+        <div class="date22 date-box">16</div>
+        <div class="date23 date-box">17</div>
+        <div class="date24 date-box">18</div>
+        <div class="date25 date-box">19</div>
+        <div class="date26 date-box">20</div>
+        <div class="date27 date-box">21</div>
+        <div class="date28 date-box">22</div>
+        
+        <div class="date29 date-box">23</div>
+        <div class="date30 date-box">24</div>
+        <div class="date31 date-box">25</div>
+        <div class="date32 date-box">26</div>
+        <div class="date33 date-box">27</div>
+        <div class="date34 date-box">28</div>
+        <div class="date35 date-box">29</div>
+        
+        <div class="footer">Calendar 2025</div>
+    </div>
+</body>
+</html>
