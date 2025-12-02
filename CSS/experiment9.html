@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Product Grid</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding: 40px;
+            background-color: #fdfbf7;
+            color: #2d3436;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            border-radius: 20px;
+            padding: 40px;
+            background-color: #ffffff;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 32px;
+            font-weight: 600;
+            color: #2d3436;
+            letter-spacing: -0.5px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            padding: 30px;
+            text-align: center;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .card-1 {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+        }
+
+        .card-2 {
+            background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+        }
+
+        .card-3 {
+            background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+        }
+
+        .card-4 {
+            background: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+        }
+
+        .product-card img {
+            width: 100%;
+            max-width: 180px;
+            height: 180px;
+            object-fit: cover;
+            margin-bottom: 20px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .product-card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #2d3436;
+            font-weight: 600;
+        }
+
+        .product-card p {
+            font-size: 14px;
+            color: #636e72;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .product-card .price {
+            font-weight: 600;
+            color: #2d3436;
+            font-size: 18px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .buy {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #ffffff;
+            color: #2d3436;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 14px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .product-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+        }
+
+        @media (max-width: 425px) {
+            .product-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Aesthetic Collection</h1>
+        <div class="product-grid">
+            <div class="product-card card-1">
+                <img src="iphone.jpeg" alt="iPhone">
+                <h3>iPhone 15</h3>
+                <p>Designed to be loved.</p>
+                <span class="price">₹79,900</span>
+                <div class="buy"><a href="https://www.apple.com/in/iphone/">Shop Now</a></div>
+            </div>
+            <div class="product-card card-2">
+                <img src="watch.jpeg" alt="Smart Watch">
+                <h3>Titan Smart</h3>
+                <p>Smart features, stylish look.</p>
+                <span class="price">₹7,999</span>
+                <div class="buy"><a href="https://www.titan.co.in/">Shop Now</a></div>
+            </div>
+            <div class="product-card card-3">
+                <img src="hoodie.jpeg" alt="Hoodie">
+                <h3>H&M Hoodie</h3>
+                <p>Cozy vibes for every day.</p>
+                <span class="price">₹1,299</span>
+                <div class="buy"><a href="https://www2.hm.com/en_in/index.html">Shop Now</a></div>
+            </div>
+            <div class="product-card card-4">
+                <img src="shirt.jpeg" alt="Shirt">
+                <h3>Premium Shirt</h3>
+                <p>Elevate your wardrobe.</p>
+                <span class="price">₹2,499</span>
+                <div class="buy"><a href="https://www.raymond.in/">Shop Now</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
