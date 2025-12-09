@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #ffffff;
+            color: #000000;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 20px 40px;
+            border-bottom: 1px solid #eaeaea;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .name {
+            font-size: 28px;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+            color: #000000;
+            text-transform: uppercase;
+        }
+
+        .link {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .link li {
+            margin: 0 25px;
+        }
+
+        .link li a {
+            text-decoration: none;
+            color: #555555;
+            font-size: 15px;
+            font-weight: 400;
+            transition: color 0.2s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .link li a:hover {
+            color: #000000;
+        }
+
+        .cart a {
+            text-decoration: none;
+            font-size: 24px;
+            color: #000000;
+        }
+
+        center {
+            margin-top: 100px;
+        }
+
+        h1 {
+            font-weight: 300;
+            font-size: 48px;
+            letter-spacing: 1px;
+            margin: 0;
+            color: #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="name">Amazon</div>
+        <ul class="link">
+            <li><a href="">Home</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">Categories</a></li>
+            <li><a href="">Deals</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="cart">
+            <a href="">🛒</a>
+        </div>
+    </nav>
+
+    <center>
+        <h1>Welcome</h1>
+    </center>
+
+</body>
